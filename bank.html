@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <main class="flex">
+        <div class="mockup-phone bg-white">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-1">
+                <!-- starting line of Add money and cash out-->
+                <div class="hero bg-base-100 min-h-screen">
+                    <div class="hero-content flex-col">
+                        <div class="stats shadow bg-white">
+                            <div class="stat text-black">
+                              <div class="stat-title">Total Cash</div>
+                              <div id="total" class="stat-value">89400</div>
+                              
+                            </div>
+                          </div>
+                          <div>
+                            <button id="togl1" class="btn btn-lg bg-white">Add Money</button>
+                            <button id="togl2" class="btn  btn-lg bg-white">Cash Out</button>
+                          </div>
+                        
+                      
+                      <div id="add-money-are" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl bg-blue-400" >
+                        
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text text-black">Amount</span>
+                            </label>
+                            <input id="amount" type="number" placeholder="Enter Amount" class="input input-bordered bg-white" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text text-black">Password</span>
+                            </label>
+                            <input id="add-pass" type="password" placeholder="password" class="input input-bordered bg-white" required />
+                            
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="add-money" class="btn btn-primary">Add Money</button>
+                          </div>
+                        </form>
+                      </div>
+                      <!--Cash Out area-->
+                      <div id="cash-out-area" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden bg-pink-300" >
+                        
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text text-black">Amount</span>
+                            </label>
+                            <input id="co-amount" type="number" placeholder="Enter Amount" class="input input-bordered bg-white" required  />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text text-black">Password</span>
+                            </label>
+                            <input id="cash_out-pass" type="password" placeholder="password" class="input input-bordered bg-white" required />
+                            
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="cash-out" class="btn btn-primary bg-pink-100 text-black">Cash Out</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+    </main>
+    
+    <script src="/JS/bank.js"></script>
+</body>
+</html>
